@@ -1,0 +1,9 @@
+Description:
+
+Parameter 1 of constructor in com.achartechnologies.security_demo_api.security.JwtAuthenticationFilter required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
