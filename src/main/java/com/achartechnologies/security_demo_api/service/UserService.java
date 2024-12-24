@@ -4,6 +4,9 @@ package com.achartechnologies.security_demo_api.service;
 
 import com.achartechnologies.security_demo_api.entity.User;
 import com.achartechnologies.security_demo_api.repository.UserRepository;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -27,4 +30,6 @@ public class UserService {
     public Optional<User> findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
+
+
 }
